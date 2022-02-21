@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>presentacion</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,16 +10,20 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Bonilla Guzman</ion-card-subtitle>
-      <ion-card-title>Andri Manuel</ion-card-title>
+      <ion-card-subtitle>ITLA</ion-card-subtitle>
+      <ion-card-title>Perfil</ion-card-title>
     </ion-card-header>
       <picture>
-        <img src="../../assets/andri.jpeg" alt="Picture 2x2 of Andri">
-        <figcaption>
-            <address>
-              <p>Andri Bonilla Guzman</p>
-            </address>
-        </figcaption>
+        <ion-item *ngFor="let item of items">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.src" alt="Picture 2x2 of Andri"></ion-img>
+          <figcaption>
+              <address>
+                <p>Andri Bonilla Guzman</p>
+              </address>
+          </figcaption>
+        </ion-thumbnail>
+      </ion-item>
     </picture>
   </ion-card>
 </ion-content>

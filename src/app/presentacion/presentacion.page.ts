@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentacionPage implements OnInit {
 
+  items : string = "../../assets/andri.jpeg";
+
   constructor() { }
 
   ngOnInit() {
