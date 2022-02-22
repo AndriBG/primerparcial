@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>numeromayor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Introduzca el primer numero</ion-label>
+      <ion-input #myInput type="text" [(ngModel)]="num1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Introduzca el segundo numero</ion-label>
+      <ion-input #myInput type="text" [(ngModel)]="num2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button expand="block" ion-button (click)="inputValueToLable()">
+        Validar
+      </button>
+    </ion-item>
+    <ion-item>
+      <ion-label> {{Result}} </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

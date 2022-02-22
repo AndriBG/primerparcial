@@ -13,13 +13,13 @@
       <ion-card-subtitle>ITLA</ion-card-subtitle>
       <ion-card-title>Perfil</ion-card-title>
     </ion-card-header>
-      <picture>
-        <ion-item *ngFor="let item of items">
-          <ion-thumbnail slot="start">
-            <ion-img [src]="item.src" alt="Picture 2x2 of Andri"></ion-img>
-          </ion-thumbnail>
-          <ion-label>{{item.text}}</ion-label>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.src" alt="Picture 2x2 of Andri"></ion-img>
+        </ion-thumbnail>
+        <ion-label>{{item.text}}</ion-label>
       </ion-item>
-    </picture>
+    </ion-list>
   </ion-card>
 </ion-content>

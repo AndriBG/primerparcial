@@ -14,7 +14,15 @@ const routes: Routes = [
   {
     path: 'presentacion',
     loadChildren: () => import('./presentacion/presentacion.module').then( m => m.PresentacionPageModule)
+  },  {
+    path: 'multiplicadora',
+    loadChildren: () => import('./multiplicadora/multiplicadora.module').then( m => m.MultiplicadoraPageModule)
+  },
+  {
+    path: 'numeromayor',
+    loadChildren: () => import('./numeromayor/numeromayor.module').then( m => m.NumeromayorPageModule)
   }
+
 ];
 
 @NgModule({
