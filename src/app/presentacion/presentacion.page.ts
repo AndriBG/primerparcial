@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentacionPage implements OnInit {
 
-  items : string = "../../assets/andri.jpeg";
+  items : any = [{src:"../../assets/andri.jpeg",text:'Andri Bonilla Guzman'}];
 
   constructor() { }
 

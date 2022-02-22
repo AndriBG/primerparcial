@@ -15,14 +15,10 @@
     </ion-card-header>
       <picture>
         <ion-item *ngFor="let item of items">
-        <ion-thumbnail slot="start">
-          <ion-img [src]="item.src" alt="Picture 2x2 of Andri"></ion-img>
-          <figcaption>
-              <address>
-                <p>Andri Bonilla Guzman</p>
-              </address>
-          </figcaption>
-        </ion-thumbnail>
+          <ion-thumbnail slot="start">
+            <ion-img [src]="item.src" alt="Picture 2x2 of Andri"></ion-img>
+          </ion-thumbnail>
+          <ion-label>{{item.text}}</ion-label>
       </ion-item>
     </picture>
   </ion-card>
